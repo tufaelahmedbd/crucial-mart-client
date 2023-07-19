@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Button from "./Button";
 
 const Navbar = () => {
   return (
@@ -37,12 +38,7 @@ const Navbar = () => {
         </nav>
         {/* nav right */}
         <nav>
-          <Link
-            href="/login"
-            className=" bg-accent1 text-light px-6 py-3 rounded-xl hover:bg-accent1/90 duration-300"
-          >
-            Login
-          </Link>
+          <Button href="/login" placeholder="Login" color="green" />
         </nav>
       </div>
     </header>
